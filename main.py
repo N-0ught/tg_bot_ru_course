@@ -69,4 +69,4 @@ updater.dispatcher.add_handler(MessageHandler(Filters.command, invalid_command))
 updater.start_webhook(listen="0.0.0.0",
                       port=int(PORT),
                       url_path=BOT_API)
-updater.bot.setWebhook('https://yourherokuappname.herokuapp.com/' + BOT_API)
+updater.bot.setWebhook('https://russian-course-tg-bot.herokuapp.com/' + BOT_API)
