@@ -4,9 +4,12 @@ from telegram.ext.callbackcontext import CallbackContext
 from telegram.ext.commandhandler import CommandHandler
 from telegram.ext.messagehandler import MessageHandler
 from telegram.ext.filters import Filters
-from telegram import Message
+import logging
 import os
 
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    level=logging.INFO)
+logger = logging.getLogger(__name__)
 BOT_API = os.environ.get('BOT_API')
 PORT = os.getenv('PORT')
 updater = Updater(BOT_API, use_context=True)
