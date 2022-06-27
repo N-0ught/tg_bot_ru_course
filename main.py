@@ -10,9 +10,9 @@ import os
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 logger = logging.getLogger(__name__)
-BOT_API = os.environ.get('BOT_API')
+TOKEN = os.environ.get('TOKEN')
 PORT = os.getenv('PORT')
-updater = Updater(BOT_API, use_context=True)
+updater = Updater(TOKEN, use_context=True)
 
 
 def start(update: Update, context: CallbackContext):
@@ -71,5 +71,5 @@ updater.dispatcher.add_handler(MessageHandler(Filters.command, invalid_command))
 # updater.start_polling()
 updater.start_webhook(listen="0.0.0.0",
                       port=int(PORT),
-                      url_path=BOT_API)
-updater.bot.setWebhook('https://russian-course-tg-bot.herokuapp.com/' + BOT_API)
+                      url_path=TOKEN)
+updater.bot.setWebhook('https://russian-course-tg-bot.herokuapp.com/' + TOKEN)
