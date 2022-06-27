@@ -65,8 +65,9 @@ updater.dispatcher.add_handler(CommandHandler('day1', day_one))
 updater.dispatcher.add_handler(CommandHandler('day2', day_two))
 updater.dispatcher.add_handler(CommandHandler('day3', day_three))
 updater.dispatcher.add_handler(CommandHandler('secret', booba))
-updater.dispatcher.add_handler(MessageHandler(Filters.text, echo))
 updater.dispatcher.add_handler(MessageHandler(Filters.command, invalid_command))
+updater.dispatcher.add_handler(MessageHandler(Filters.text, echo))
+
 
 # updater.start_polling()
 updater.start_webhook(listen="0.0.0.0",
