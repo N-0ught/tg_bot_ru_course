@@ -215,7 +215,7 @@ As you’ve probably noticed, reading in Russian is not that tough. However ther
         vid1 = vid1.read()
     update.message.reply_video(vid1)
     update.message.reply_text("""3. The letter ё is always stressed. Ex. ёршик, ёжик, ёлка
-4. After consonants г, к, х, ж, ш, щ, ч  do not write the letter ы. Whenever an [ы] or [и] sound follows one of these letters, it is spelled и. This is called 7-letter spelling rule.
+4. After consonants г, к, х, ж, ш, щ, ч  do NOT! write the letter ы. Whenever an [ы] or [и] sound follows one of these letters, it is spelled и. This is called 7-letter spelling rule.
 ex. жир, цирк, шить, чипсы [ы]
 
 * Stressed letters are in capitals
@@ -252,7 +252,7 @@ Take a picture of your handwriting and share it in the chat!""")
 
 
 def booba(update: Update, context: CallbackContext):
-    with open('pagman/ahegao.jpg', 'rb') as pict:
+    with open('pagman/secret_booba.jpg', 'rb') as pict:
         f = pict.read()
     update.message.reply_text("Oh, you've discovered the secret command! Congratulations! Enjoy your bonus ;)")
     update.message.reply_photo(f)
