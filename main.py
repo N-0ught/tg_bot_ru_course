@@ -167,13 +167,13 @@ For premium subscribers: Record an audio of you pronouncing the sounds and the w
     with open('pagman/day4/day4.1.MOV', 'rb') as vid1:
         vid1 = vid1.read()
     update.message.reply_video(vid1)
-    with open('pagman/day3/day4.2.MOV', 'rb') as vid2:
+    with open('pagman/day4/day4.2.MOV', 'rb') as vid2:
         vid2 = vid2.read()
     update.message.reply_video(vid2)
-    with open('pagman/day3/day4.3.MOV', 'rb') as vid3:
+    with open('pagman/day4/day4.3.MOV', 'rb') as vid3:
         vid3 = vid3.read()
     update.message.reply_video(vid3)
-    with open('pagman/day3/day4.4.MOV', 'rb') as vid4:
+    with open('pagman/day4/day4.4.MOV', 'rb') as vid4:
         vid4 = vid4.read()
     update.message.reply_video(vid4)
     update.message.reply_text("""✍️ Task 2
