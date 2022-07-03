@@ -16,7 +16,7 @@ updater = Updater(TOKEN, use_context=True)
 
 
 def start(update: Update, context: CallbackContext):
-    with open('pagman/day1/intro.MOV', 'rb') as intro:
+    with open('pagman/day1/intro.MP4', 'rb') as intro:
         intro = intro.read()
     update.message.reply_video(intro)
     update.message.reply_text("""Привéт! (Hi!) Добрó пожáловать на курс! 🙋🏻‍♀️
@@ -54,7 +54,7 @@ By the end of the week you will be able to write this ⬇️
 Russian alphabet is based on the Cyrillic script. Here you can see the letters with their Latin transcriptions ⬆️""")
     with open('pagman/day1/day1.1.MP4', 'rb') as vid1:
         vid1 = vid1.read()
-    update.message.reply_video(vid1)
+    update.message.reply_video(vid1, width=720, height=1280, protect_content=True)
     update.message.reply_text("""We can divide all the letters into 4 smaller groups:
 
 True friends: Aa, Kк, Мм, Oo, Tт (look and sound like English letters) 
@@ -73,9 +73,9 @@ Do the tasks and send your results to our teacher Ainur @N_0ught if you have a p
 Watch the video and repeat the sounds after me.
 
 For premium subscribers: Record an audio of you pronouncing the words from the video (IN RED) and send it to Ainur @N_0ught. You can also ask him any questions, and he will be happy to answer them.""")
-    with open('pagman/day1/day1.2.MOV', 'rb') as vid2:
+    with open('pagman/day1/day1.2.MP4', 'rb') as vid2:
         vid2 = vid2.read()
-    update.message.reply_video(vid2)
+    update.message.reply_video(vid2, width=720, height=1280, protect_content=True)
     update.message.reply_text("""✍️ Task 2
 
 
@@ -103,9 +103,9 @@ They look like English letters but sound different
 Watch the video and repeat the sounds after me.
 
 For premium subscribers: Record an audio of you pronouncing the words from the video (IN RED) and send it to Ainur @N_0ught. You can also ask him any questions, and he will be happy to answer them.""")
-    with open('pagman/day2/day2.1.MOV', 'rb') as vid1:
+    with open('pagman/day2/day2.1.MP4', 'rb') as vid1:
         vid1 = vid1.read()
-    update.message.reply_video(vid1)
+    update.message.reply_video(vid1, width=720, height=1280, protect_content=True)
     update.message.reply_text("""✍️ Task 2
 
 
@@ -133,9 +133,9 @@ They look different but sound like English letters.
 Watch the video and repeat the sounds after me.
 
 For premium subscribers: Record an audio of you pronouncing the words from the video (IN RED) and send it to Ainur @N_0ught. You can also ask him any questions, and he will be happy to answer them.""")
-    with open('pagman/day3/day3.1.MOV', 'rb') as vid1:
+    with open('pagman/day3/day3.1.MP4', 'rb') as vid1:
         vid1 = vid1.read()
-    update.message.reply_video(vid1)
+    update.message.reply_video(vid1, width=720, height=1280, protect_content=True)
     update.message.reply_text("""✍️ Task 2
 
 
@@ -163,19 +163,19 @@ They are applied to separate the two sounds that precede and follow these letter
 
 Watch the videos and repeat the sounds after me.
 
-For premium subscribers: Record an audio of you pronouncing the sounds and the words (videos 2,3 and 4) and send it to Ainur @N_0ught. You can also ask him any questions, and he will be happy to answer them.""")
-    with open('pagman/day4/day4.1.MOV', 'rb') as vid1:
+For premium subscribers: Record an audio of you pronouncing the sounds and the words (videos 2, 3 and 4) and send it to Ainur @N_0ught. You can also ask him any questions, and he will be happy to answer them.""")
+    with open('pagman/day4/day4.1.mp4', 'rb') as vid1:
         vid1 = vid1.read()
-    update.message.reply_video(vid1)
-    with open('pagman/day4/day4.2.MOV', 'rb') as vid2:
+    update.message.reply_video(vid1, width=720, height=1280, protect_content=True)
+    with open('pagman/day4/day4.2.mp4', 'rb') as vid2:
         vid2 = vid2.read()
-    update.message.reply_video(vid2)
-    with open('pagman/day4/day4.3.MOV', 'rb') as vid3:
+    update.message.reply_video(vid2, width=720, height=1280, protect_content=True)
+    with open('pagman/day4/day4.3.mp4', 'rb') as vid3:
         vid3 = vid3.read()
-    update.message.reply_video(vid3)
-    with open('pagman/day4/day4.4.MOV', 'rb') as vid4:
+    update.message.reply_video(vid3, width=720, height=1280, protect_content=True)
+    with open('pagman/day4/day4.4.MP4', 'rb') as vid4:
         vid4 = vid4.read()
-    update.message.reply_video(vid4)
+    update.message.reply_video(vid4, width=720, height=1280, protect_content=True)
     update.message.reply_text("""✍️ Task 2
 
 
@@ -223,9 +223,9 @@ As you’ve probably noticed, reading in Russian is not that tough. However ther
 
 1. O is pronounced like “a” in case it’s not stressed (онА, овАл, хорошО* [а])
 2. Voiced letters (б, г, д, з, в, ж) are pronounced like their breath couples (п, к, т, с, ф, ш) if they are at the very end of a word (год [т] (even before ь – любовь [фь]) or if preceded by another breath letter (ex. лодка [тк]) Watch the video with examples ⬇️""")
-    with open('pagman/day6/day6.1.MOV', 'rb') as vid1:
+    with open('pagman/day6/day6.1.MP4', 'rb') as vid1:
         vid1 = vid1.read()
-    update.message.reply_video(vid1)
+    update.message.reply_video(vid1, width=720, height=1280, protect_content=True)
     update.message.reply_text("""3. The letter ё is always stressed. Ex. ёршик, ёжик, ёлка
 4. After consonants г, к, х, ж, ш, щ, ч  do NOT! write the letter ы. Whenever an [ы] or [и] sound follows one of these letters, it is spelled и. This is called 7-letter spelling rule.
 ex. жир, цирк, шить, чипсы [ы]
